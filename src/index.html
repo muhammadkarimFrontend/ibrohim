@@ -1,24 +1,63 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ibrohim</title>
-  <link href="./output.css" rel="stylesheet">
-  <link rel="icon" href="images/hero/logo.svg">
-</head>
-<body class="bg-black text-white">
-  <header class="md:py-9 py-4">
-  <div class="max-w-[1208px] w-full mx-auto py-5 px-5 flex items-center justify-between">
-    <a class="flex" href="/">
-      <img class="sm:w-[131px] w-24" src="images/header/logo.svg" alt="logo" width="131" height="40"/>
-    </a>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrohim brat</title>
+    <link rel="icon" href="img/logo-top.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans text-white bg-black bg-[url('img/bg-img.png')] bg-no-repeat bg-cover bg-bottom">
+    <!-- HEADER -->
+    <header class="pt-9" data-aos="fade-down">
+      <div class="max-w-7xl mx-auto px-5 flex justify-between items-center">
+        <a href="/" data-aos="fade-right">
+          <img src="images/header/logo.svg" alt="logo" class="w-auto h-auto" />
+        </a>
+        <div class="flex gap-3" data-aos="fade-left">
+          <button class="px-4 py-2 text-sm text-white border border-white rounded hover:bg-white hover:text-black transition">
+            About me
+          </button>
+          <button
+            class="px-4 py-2 text-sm bg-white text-black border border-white rounded hover:bg-transparent hover:text-white transition">
+            Contact
+          </button>
+        </div>
+      </div>
+    </header>
 
-    <div class="flex items-center md:gap-2.5 gap-1.5">
-      <button class="border border-[#9A9A9A] rounded-lg md:py-2 py-1.5 md:px-4 px-3 text-[#E1E1E1] font-medium text-sm leading-none hover:bg-white hover:text-black  duration-300 ease-in-out ...">About me</button>
-      <button class="rounded-lg md:py-2 py-1.5 md:px-4 px-3 text-black bg-[#FFFFFF] font-medium leading-none hover:bg-black hover:text-white hover:border border-[#9A9A9A] duration-300">Contact</button>
-    </div>
-  </div>
-  </header>
-</body>
+    <!-- HERO -->
+    <main>
+      <section class="py-28 text-center" data-aos="fade-up">
+        <div class="max-w-3xl mx-auto flex flex-col items-center px-5">
+          <img src="./images/hero/about Me.png" alt="Ibrahim Memon" class="w-[231px] h-[231px] mb-9" />
+          <div class="mb-5">
+            <h2 class="text-5xl sm:text-6xl font-bold">Ibrahim Memon!</h2>
+            <h3 class="text-xl mt-2">
+              <span class="bg-gradient-to-r from-[#9c83ff] to-[#ff9051] bg-clip-text text-transparent">🍿 Chill</span> & Code
+            </h3>
+          </div>
+          <p class="max-w-xl text-base mb-9">
+            Passionate Software Engineer with a focus on React Native development, dedicated to crafting elegant and user-friendly
+            mobile applications.
+          </p>
+          <button
+            class="px-10 py-4 text-sm border border-white text-white rounded-full hover:bg-white hover:text-black transition">
+            Contact Me
+          </button>
+        </div>
+      </section>
+
+
+
+    <!-- AOS INIT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
 </html>
